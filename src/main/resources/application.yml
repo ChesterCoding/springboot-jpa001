@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:mysql:///avicii?serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource #指定连接池驱动
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
